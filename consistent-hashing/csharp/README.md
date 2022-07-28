@@ -1,10 +1,13 @@
-Experimental implementation of consistent hashing ring in C#.
+# Experimental implementation of consistent hashing in C#.
 
-The project contains two implementations:
-- *1 - ring-only*: contains basic implementation for building a ring of nodes
-- *2 - ring-with-data* extends the basic hashing ring and introduces work with node data (simulated in-memory) and migrating data on add or remove node operations
+### The project contains two implementations
+- **1 - ring-only:** contains basic implementation for building a ring of nodes
+- **2 - ring-with-data:** extends the basic hashing ring and introduces work with node data (simulated in-memory) and migrating data on add or remove node operations
 
+
+### Description
 Assuming you're already familiar with consistent hashing concepts, here's a short explanation of what you will see in the project:
+
 - All nodes are stored in a "ring", where each one keeps the data for keys with position lower or equal to node's position.
 - Position is calculated by hashing a key (node ip address or item key) mod total node space.
 - Adding a node:
@@ -17,13 +20,12 @@ Assuming you're already familiar with consistent hashing concepts, here's a shor
 - Replicas
   - In order to have more "even" distribution of data, we create number of replicas or virtual nodes, which are only links in the hashing ring to their real node.
 
-Considerations:
+
+### Further notes
 - Can consider adding **weighted nodes**. If a node has more resources compared to others, we can add more "weight" to it. To achieve that, we can increase the number of labels (replicas) to adjust the probability of keys ending up in the nodes with greater weight.
 
 
-Resources:
-
+### Resources
 - Inspired by [Dynamo White Paper](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
-- [Consistent Hashing and Random Trees: Distributed Caching Protocols for Relieving Hot Spots on the World Wide Web](https://dl.acm.org/doi/pdf/10.1145/258533.258660)
 - [Implementation guideline](https://en.wikipedia.org/wiki/Consistent_hashing#Implementation)
 - [Open addressing](https://en.wikipedia.org/wiki/Open_addressing)
