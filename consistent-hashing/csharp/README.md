@@ -23,7 +23,7 @@ Assuming you're already familiar with consistent hashing concepts, here's a shor
 
 ### Further notes
 - Can consider adding **weighted nodes**. If a node has more resources compared to others, we can add more "weight" to it. To achieve that, we can increase the number of labels (replicas) to adjust the probability of keys ending up in the nodes with greater weight.
-- Consider replacing open addressing with [Double Hashing](https://www.geeksforgeeks.org/double-hashing/?ref=lbp) for node hash collisions, as it reduces clustering in an optimized way, but for the cost of poor cache performance.
+- Consider replacing open addressing with [Double Hashing](https://www.geeksforgeeks.org/double-hashing/?ref=lbp) for node hash collisions, as it reduces clustering in an optimized way, but for the cost of poor cache performance. The implementation should follow `(hash1(key) + i * hash2(key)) % TABLE_SIZE`.
 
 
 ### Resources
