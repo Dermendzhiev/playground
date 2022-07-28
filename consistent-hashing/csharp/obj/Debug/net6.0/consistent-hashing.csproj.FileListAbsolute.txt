@@ -1,0 +1,15 @@
+/Users/nikolay.dermendzhiev/src/playground/consistent-hashing/csharp/bin/Debug/net6.0/consistent-hashing
+/Users/nikolay.dermendzhiev/src/playground/consistent-hashing/csharp/bin/Debug/net6.0/consistent-hashing.deps.json
+/Users/nikolay.dermendzhiev/src/playground/consistent-hashing/csharp/bin/Debug/net6.0/consistent-hashing.runtimeconfig.json
+/Users/nikolay.dermendzhiev/src/playground/consistent-hashing/csharp/bin/Debug/net6.0/consistent-hashing.dll
+/Users/nikolay.dermendzhiev/src/playground/consistent-hashing/csharp/bin/Debug/net6.0/consistent-hashing.pdb
+/Users/nikolay.dermendzhiev/src/playground/consistent-hashing/csharp/obj/Debug/net6.0/consistent-hashing.csproj.AssemblyReference.cache
+/Users/nikolay.dermendzhiev/src/playground/consistent-hashing/csharp/obj/Debug/net6.0/consistent-hashing.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nikolay.dermendzhiev/src/playground/consistent-hashing/csharp/obj/Debug/net6.0/consistent-hashing.AssemblyInfoInputs.cache
+/Users/nikolay.dermendzhiev/src/playground/consistent-hashing/csharp/obj/Debug/net6.0/consistent-hashing.AssemblyInfo.cs
+/Users/nikolay.dermendzhiev/src/playground/consistent-hashing/csharp/obj/Debug/net6.0/consistent-hashing.csproj.CoreCompileInputs.cache
+/Users/nikolay.dermendzhiev/src/playground/consistent-hashing/csharp/obj/Debug/net6.0/consistent-hashing.dll
+/Users/nikolay.dermendzhiev/src/playground/consistent-hashing/csharp/obj/Debug/net6.0/refint/consistent-hashing.dll
+/Users/nikolay.dermendzhiev/src/playground/consistent-hashing/csharp/obj/Debug/net6.0/consistent-hashing.pdb
+/Users/nikolay.dermendzhiev/src/playground/consistent-hashing/csharp/obj/Debug/net6.0/consistent-hashing.genruntimeconfig.cache
+/Users/nikolay.dermendzhiev/src/playground/consistent-hashing/csharp/obj/Debug/net6.0/ref/consistent-hashing.dll
