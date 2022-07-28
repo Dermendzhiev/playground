@@ -12,7 +12,7 @@ Assuming you're already familiar with consistent hashing concepts, here's a shor
 - Position is calculated by hashing a key (node ip address or item key) mod total node space.
 - Adding a node:
   - When adding a node, we do rehash and migration of relevant keys from it's successor node.
-  - If there is a collision, when calculating node hash position, we solve it with [open addressing](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/), meaning we search for the next free hash position
+  - If there is a collision, when calculating node hash position, we solve it with [Open Addressing](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/), meaning we search for the next free hash position
 - Removing a node:
   - When removing a node, we migrate it's data to the successor node 
 - Search node by key:
@@ -23,6 +23,7 @@ Assuming you're already familiar with consistent hashing concepts, here's a shor
 
 ### Further notes
 - Can consider adding **weighted nodes**. If a node has more resources compared to others, we can add more "weight" to it. To achieve that, we can increase the number of labels (replicas) to adjust the probability of keys ending up in the nodes with greater weight.
+- Consider replacing open addressing with [Double Hashing](https://www.geeksforgeeks.org/double-hashing/?ref=lbp) for node hash collisions, as it reduces clustering in an optimized way, but for the cost of poor cache performance.
 
 
 ### Resources
