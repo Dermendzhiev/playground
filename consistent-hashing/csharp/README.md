@@ -1,4 +1,4 @@
-# Experimental implementation of consistent hashing in C#.
+# Experimental implementation of consistent hashing in C#
 
 ### The project contains two implementations
 - **1 - ring-only:** contains basic implementation for building a ring of nodes
