@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace csharp.basic_hash_table
 {
-    public class HashTable
+    public class BasicHashTable : IHashTable
     {
         private const int MIN_BUCKETS = 5;
         private const double DEFAULT_LOAD_FACTOR = 0.75;
@@ -17,7 +17,7 @@ namespace csharp.basic_hash_table
         private long buckets;
         private double loadFactor;
 
-        public HashTable(long? capacity, double? loadFactor)
+        public BasicHashTable(long? capacity, double? loadFactor)
         {
             if (capacity == null || capacity < MIN_BUCKETS)
             {
@@ -25,7 +25,7 @@ namespace csharp.basic_hash_table
             }
             else
             {
-                this.buckets = this.GetNextPrimeNumber(capacity);
+                this.buckets = this.GetNextPrimeNumber(capacity.Value);
             }
 
             if (loadFactor == null || loadFactor <= 0)
@@ -56,7 +56,7 @@ namespace csharp.basic_hash_table
             return false;
         }
 
-        public void InsertOrUpdate(string key, object value)
+        public void Upsert(string key, object value)
         {
             var targetBucket = this.GetBucket(key, this.buckets);
             InsertOrUpdateItem(items, targetBucket, key, value);

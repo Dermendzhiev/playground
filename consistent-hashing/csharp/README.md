@@ -26,7 +26,7 @@ Assuming you're already familiar with consistent hashing concepts, here's a shor
 - Consider replacing open addressing with [Double Hashing](https://www.geeksforgeeks.org/double-hashing/?ref=lbp) for node hash collisions, as it reduces clustering in an optimized way, but for the cost of poor cache performance. The implementation should follow `(hash1(key) + i * hash2(key)) % TABLE_SIZE`.
 
 
-### Resources
+### References
 - Inspired by [Dynamo White Paper](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
 - [Implementation guideline](https://en.wikipedia.org/wiki/Consistent_hashing#Implementation)
 - [Open addressing](https://en.wikipedia.org/wiki/Open_addressing)
