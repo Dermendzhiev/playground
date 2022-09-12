@@ -25,6 +25,7 @@ The project contains two implementations of hash table. We have `basic-hash-tabl
 
 
 ### References
+- [Hash table - Wikipedia](https://en.wikipedia.org/wiki/Hash_table)
 - [Robin Hood Hashing, Pedro Celis, 1986](https://cs.uwaterloo.ca/research/tr/1986/CS-86-14.pdf)
 - [Robin Hood Hashing, Emmanuel Goossaert](https://codecapsule.com/2013/11/11/robin-hood-hashing/)
 - [Robin Hood Hashing, Sebastian Sylvan](https://www.sebastiansylvan.com/post/robin-hood-hashing-should-be-your-default-hash-table-implementation/)
